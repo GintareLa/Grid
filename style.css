@@ -9,10 +9,14 @@ body {
   background-color: #333;
   color: gold;
   overflow-x: hidden;
+  background-image: url(./wallhaven-vq68m3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container > * {
-  border: 2px solid gold;
+  /* border: 2px solid gold; */
   padding: 2rem;
   text-align: center;
   display: flex;
@@ -266,3 +270,36 @@ footer,
         .card:hover .back {
         transform: rotateY(-360deg);
        }
+/* stiklo efektas */
+
+.s3,
+.s6 {
+  backdrop-filter: blur(5px) brightness(75%);
+
+  background-color: transparent;
+  box-shadow: 0 0 15px #000;
+}
+
+/* grazios raides */
+
+@font-face {
+  font-family: Sterion;
+  src: url(./sterion-font/Sterion-BLLld.ttf);
+  
+}
+
+.bg-text {
+    font-family: Sterion;
+    font-size: 8rem;
+    letter-spacing: 5px;
+    overflow: hidden;
+
+    background-image: url(./wallhaven-vq68m3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
